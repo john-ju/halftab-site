@@ -37,7 +37,17 @@ tr:last-child td{border-bottom:0}
 .app h2{margin:0 0 6px;font-size:22px}
 .app p{margin:0 0 14px;color:var(--muted);font-size:16px}
 .cta{display:inline-flex;align-items:center;background:var(--primary);color:var(--on-primary);text-decoration:none;font-weight:600;padding:12px 20px;border-radius:14px}
-.cta.soon{background:var(--sage-tint);color:var(--text)}
+.soon{display:inline-block;font-size:14px;font-weight:600;color:var(--primary);background:var(--sage-tint);border-radius:999px;padding:5px 12px;margin-bottom:12px}
+.signup{display:flex;gap:8px;max-width:30rem}
+.signup input{flex:1;min-width:0;font:inherit;font-size:16px;padding:13px 16px;border:1px solid var(--border);border-radius:14px;background:var(--surface);color:var(--text)}
+.signup input:focus{outline:2px solid var(--primary);outline-offset:1px;border-color:var(--primary)}
+.signup button{font:inherit;font-weight:600;font-size:16px;background:var(--primary);color:var(--on-primary);border:0;border-radius:14px;padding:13px 20px;min-height:50px;cursor:pointer;white-space:nowrap}
+.signup button:hover{background:#3B5847}
+.form-note,.app .form-note,.newsletter .form-note{font-size:14px;color:var(--muted);margin:10px 0 0}
+.newsletter{background:var(--surface);border:1px solid var(--border);border-radius:20px;padding:22px;margin:32px 0 0}
+.newsletter h2{margin:0 0 6px;font-size:22px}
+.newsletter p{margin:0 0 14px;color:var(--muted);font-size:16px}
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
 details{background:var(--surface);border:1px solid var(--border);border-radius:16px;padding:14px 18px;margin-bottom:10px}
 summary{font-weight:600;cursor:pointer}
 details p{margin:10px 0 0;color:var(--muted)}
@@ -61,3 +71,4 @@ details p{margin:10px 0 0;color:var(--muted)}
 footer{border-top:1px solid var(--border);padding:24px 0 48px;color:var(--muted);font-size:14px;display:flex;flex-wrap:wrap;gap:16px;justify-content:space-between}
 footer a{color:var(--primary)}
 @media (max-width:560px){.app{grid-template-columns:1fr}.app img{width:88px}nav a{margin-left:14px}}
+@media (max-width:420px){.signup{flex-direction:column}}
