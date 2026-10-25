@@ -33,11 +33,12 @@ th{font-weight:600;background:var(--muted-surface)}
 tr:last-child td{border-bottom:0}
 .callout{background:var(--muted-surface);border-radius:16px;padding:16px 18px;font-size:15px;color:var(--muted);margin:18px 0}
 .app{background:var(--surface);border:1px solid var(--border);border-radius:20px;padding:22px;display:grid;grid-template-columns:auto 1fr;gap:18px;align-items:center;margin:40px 0}
-.app img{width:120px;border-radius:18px;border:1px solid var(--border)}
+.app>img{width:120px;border-radius:18px;border:1px solid var(--border)}
 .app h2{margin:0 0 6px;font-size:22px}
 .app p{margin:0 0 14px;color:var(--muted);font-size:16px}
 .cta{display:inline-flex;align-items:center;background:var(--primary);color:var(--on-primary);text-decoration:none;font-weight:600;padding:12px 20px;border-radius:14px}
 .soon{display:inline-block;font-size:14px;font-weight:600;color:var(--primary);background:var(--sage-tint);border-radius:999px;padding:5px 12px;margin-bottom:12px}
+.get{display:flex;align-items:center;flex-wrap:wrap;gap:4px 14px;margin:0 0 18px}.play{display:block;margin:-13px 0 -13px -13px;line-height:0}.play img{height:78px;width:auto;display:block}.get .soon{margin:0}
 .signup{display:flex;gap:8px;max-width:30rem}
 .signup input{flex:1;min-width:0;font:inherit;font-size:16px;padding:13px 16px;border:1px solid var(--border);border-radius:14px;background:var(--surface);color:var(--text)}
 .signup input:focus{outline:2px solid var(--primary);outline-offset:1px;border-color:var(--primary)}
@@ -70,5 +71,5 @@ details p{margin:10px 0 0;color:var(--muted)}
 @media (prefers-reduced-motion:reduce){.guide-card,.guide-card .more svg,.guide-card strong{transition:none}.guide-card:hover{transform:none}.guide-card:hover .more svg{transform:none}}
 footer{border-top:1px solid var(--border);padding:24px 0 48px;color:var(--muted);font-size:14px;display:flex;flex-wrap:wrap;gap:16px;justify-content:space-between}
 footer a{color:var(--primary)}
-@media (max-width:560px){.app{grid-template-columns:1fr}.app img{width:88px}nav a{margin-left:14px}}
+@media (max-width:560px){.app{grid-template-columns:1fr}.app>img{width:88px}nav a{margin-left:14px}}
 @media (max-width:420px){.signup{flex-direction:column}}
